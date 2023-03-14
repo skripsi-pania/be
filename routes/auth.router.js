@@ -9,7 +9,11 @@ const users = [
 ];
 
 const KEY = "secretkey";
-
+router.get("/login", (req, res) => {
+  res.send("hello world");
+  res.send(users);
+  console.log(users);
+});
 // http://localhost:3000/auth/login
 router.post("/login", (req, res) => {
   // const data = req.body; // ini cara pertama 1*
